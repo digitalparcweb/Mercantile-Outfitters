@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mercantile Outfitters — Minnesota-Made Heavyweight Tees</title>
+<title>Mercantile Outfitters: Minnesota-Made Heavyweight Tees</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@ html.show-about #page-about { display: block; }
 .masthead h1 { font-family: var(--font-display); font-size: clamp(3rem, 2.1rem + 5.8vw, 7.2rem); line-height: 0.92; max-width: 11ch; letter-spacing: -0.01em; color: var(--paper); text-shadow: 0 2px 24px rgba(0,0,0,0.25); }
 .masthead h1 em { font-style: italic; font-weight: 500; color: var(--sand); }
 .masthead__foot { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--sp-6); margin-top: var(--sp-7); flex-wrap: wrap; }
-.masthead__foot p { max-width: 54ch; color: rgba(252,248,239,0.82); font-size: 1.05rem; line-height: 1.6; }
+.masthead__foot p { max-width: 80ch; color: rgba(252,248,239,0.82); font-size: 1.05rem; line-height: 1.6; }
 .masthead__foot .btn-row { display: flex; gap: var(--sp-3); flex-shrink: 0; }
 
 /* ============ TICKER ============ */
@@ -216,7 +216,7 @@ html.show-about #page-about { display: block; }
 .chip.is-active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .result-count { margin-left: auto; font-family: var(--font-label); font-size: 0.82rem; letter-spacing: 0.04em; color: var(--ink-faint); }
 
-/* Shop grid (kept for the full catalog page — different context than homepage rail) */
+/* Shop grid (kept for the full catalog page, different context than homepage rail) */
 .shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5); padding-bottom: var(--sp-9); }
 .pcard { display: block; }
 .pcard__frame { position: relative; border-radius: var(--radius-md); overflow: hidden; background: var(--paper); border: var(--border); box-shadow: var(--shadow-card); aspect-ratio: 4/5; transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out); }
@@ -243,7 +243,8 @@ html.show-about #page-about { display: block; }
 
 /* Value cards (About "rules") */
 .pillars__head { max-width: 640px; margin-bottom: var(--sp-8); text-align: center; margin-inline: auto; }
-.pillars__head h2 { margin-top: var(--sp-4); }
+.pillars__head h2 { margin-top: var(--sp-4); font-size: clamp(1.9rem, 1.5rem + 1.7vw, 2.8rem); }
+.bg-alt.text-center h2 { font-size: clamp(1.9rem, 1.5rem + 1.7vw, 2.8rem); }
 .value-card { background: var(--paper); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--sp-6); }
 .value-card__num { font-family: var(--font-headline); font-style: italic; font-weight: 600; font-size: 1.6rem; color: var(--rust); margin-bottom: var(--sp-3); }
 .value-card h3 { font-family: var(--font-headline); font-weight: 600; font-size: 1.25rem; margin-bottom: var(--sp-2); }
@@ -254,7 +255,7 @@ html.show-about #page-about { display: block; }
 .editorial img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .editorial::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,15,8,0.74) 0%, rgba(20,15,8,0.2) 65%); }
 .editorial__content { position: relative; z-index: 2; max-width: 560px; }
-.editorial blockquote { font-family: var(--font-headline); font-style: italic; font-weight: 500; font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.28; margin: 0; }
+.editorial blockquote { font-family: var(--font-headline); font-style: normal; font-weight: 600; font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.28; margin: 0; }
 .editorial cite { display: block; margin-top: var(--sp-5); font-family: var(--font-label); font-weight: 600; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; font-style: normal; color: var(--sand); }
 </style>
 </head>
@@ -283,7 +284,7 @@ html.show-about #page-about { display: block; }
     <div class="container masthead__body">
       <h1>Cut heavy.<br>Dyed by <em>hand</em>.<br>Built to last.</h1>
       <div class="masthead__foot">
-        <p>Premium T-shirts built for the road, the trail, and everywhere between — heavyweight cotton, garment-dyed by hand, cut to outlast the trip that broke it in.</p>
+        <p>Premium T-shirts built for the road, the trail, and everywhere between. Heavyweight cotton, garment-dyed by hand, cut to outlast the trip that broke it in.</p>
         <div class="btn-row">
           <a href="#" class="btn btn-primary" onclick="showPage('shop');return false;">Shop All Tees</a>
           <a href="#" class="btn btn-outline-light" onclick="showPage('about');return false;">Our Story</a>
@@ -421,7 +422,7 @@ html.show-about #page-about { display: block; }
   <div class="value-marquee">
     <div class="value-marquee__track">
       <div class="value-marquee__item"><strong>6.5–7.2oz</strong><span>Heavier combed cotton that drapes instead of clings</span></div>
-      <div class="value-marquee__item"><strong>3 Fits</strong><span>Classic, Relaxed, Heavyweight Pocket — cut for movement</span></div>
+      <div class="value-marquee__item"><strong>3 Fits</strong><span>Classic, Relaxed, Heavyweight Pocket, cut for movement</span></div>
       <div class="value-marquee__item"><strong>Lifetime</strong><span>Repair guarantee on every seam we&nbsp;sew</span></div>
       <div class="value-marquee__item"><strong>Small-batch</strong><span>Badges pulled from real topo lines, not clip art</span></div>
     </div>
